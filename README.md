@@ -1,11 +1,11 @@
-# @cleanderson/react-mic
+# react-mic
 
 ### Wrapper component for [react-mic](https://github.com/hackingbeauty/react-mic)
 
 
-## What's new - @cleandersonlobo/react-mic
+## What's new - react-mic
 
-The Component audio format is supported in Safari browsers (including Safari on iOS). 
+The Component audio format is supported in Safari browsers (including Safari on iOS).
 
 The Package has been updated to use the [MediaStreamRecorder](https://github.com/cleandersonlobo/MediaStreamRecorder) to record WAV audio.
 
@@ -50,13 +50,13 @@ Check out the [demo](https://www.voicerecordpro.com/#/record).
   strokeColor={string}     // sound wave color
   backgroundColor={string} // background color
   mimeType={string}        // defaults -> audio/wav. Set audio/mp3 to switch to MP3
-  bufferSize={number}      // defaults -> 2048. You can set following bufferSize values: 0, 256, 512, 1024, 2048, 4096, 8192, and 16384. 
-  sampleRate={number}      // defaults -> 44100. It accepts values only in range: 22050 to 96000 
+  bufferSize={number}      // defaults -> 2048. You can set following bufferSize values: 0, 256, 512, 1024, 2048, 4096, 8192, and 16384.
+  sampleRate={number}      // defaults -> 44100. It accepts values only in range: 22050 to 96000
 />
 
 ```
 
-## Example 
+## Example
 
 # AUDIO/WAV
 
@@ -135,7 +135,7 @@ export class Example extends React.Component {
           onStop={this.onStop}
           onData={this.onData}
           strokeColor="#000000"
-          backgroundColor="#FF4081" 
+          backgroundColor="#FF4081"
           mimeType="audio/mp3" />
         <button onTouchTap={this.startRecording} type="button">Start</button>
         <button onTouchTap={this.stopRecording} type="button">Stop</button>
